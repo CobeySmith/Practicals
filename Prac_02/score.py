@@ -1,12 +1,28 @@
 """Score"""
 
-score = float(input("Enter score: "))
-if score < 0 or score > 100:
-    print("Invalid score")
-else:
+
+def main():
+    score = get_valid_score()
+    result = determine_result(score)
+    print(f"Your result is: {result} ")
+
+
+def get_valid_score():
+    """Get a valid score"""
+    score = float(input("Score: "))
+    while score < 0 or score > 100:
+        print("Invalid Score")
+        score = float(input("Score: "))
+    return score
+
+
+def determine_result(score):
+    """Determine the user's result"""
     if score < 50:
-        print("Bad")
+        return "Bad"
     elif score >= 90:
-        print("Excellent")
-    else:
-        print("Passable")
+        return "Excellent"
+    return "Passable"
+
+
+main()
