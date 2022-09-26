@@ -29,19 +29,19 @@ def main():
 
 
 def calculate_population(population, number_of_births, number_of_deaths):
-    """Calculate population after total deaths and births"""
+    """Calculate population after total deaths and births."""
     population += number_of_births
     population -= number_of_deaths
     return population
 
 
 def simulate_births(population):
-    """Simulate a random number of births"""
+    """Simulate a random number of births."""
     return randint(int(population * 0.1), int(population * 0.2))
 
 
 def simulate_deaths(population):
-    """Simulate a random number of deaths"""
+    """Simulate a random number of deaths."""
     plague_chance = randint(1, 100)
     if plague_chance >= 95:
         print("Plague")
