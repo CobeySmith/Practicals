@@ -1,0 +1,5 @@
+83 is Passable
+32 is Bad
+77 is Passable
+95 is Excellent
+27 is Bad
