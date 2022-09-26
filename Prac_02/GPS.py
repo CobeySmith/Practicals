@@ -42,6 +42,10 @@ def simulate_births(population):
 
 def simulate_deaths(population):
     """Simulate a random number of deaths"""
+    plague_chance = randint(1, 100)
+    if plague_chance >= 95:
+        print("Plague")
+        return randint(int(population * 0.5), int(population * 0.9))
     return randint(int(population * 0.05), int(population * 0.25))
 
 
