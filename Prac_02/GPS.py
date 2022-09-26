@@ -13,7 +13,7 @@ NUMBER_OF_YEARS = 10
 def main():
     count = 1
     population = STARTING_POPULATION
-    print(f"The Starting Population: {STARTING_POPULATION}")
+    print(f"Welcome to the Gopher Population Simulator!\nThe Starting Population: {STARTING_POPULATION}\n")
     for i in range(NUMBER_OF_YEARS):
         print(f"Year {count}")
         number_of_births = simulate_births(population)
