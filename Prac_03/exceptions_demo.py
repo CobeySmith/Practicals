@@ -21,6 +21,7 @@ def main():
 
 
 def get_valid_denominator():
+    """Get a denominator that is not zero."""
     denominator = int(input("Enter the denominator: "))
     while denominator == 0:
         print("Denominator cannot be 0")
