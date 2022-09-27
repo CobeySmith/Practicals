@@ -13,7 +13,7 @@ def main():
 
 
 def convert_to_celsius(fahrenheit_value):
-    """convert fahrenheit to celsius"""
+    """Convert from fahrenheit to celsius."""
     return 5 / 9 * (fahrenheit_value - 32)
 
 
