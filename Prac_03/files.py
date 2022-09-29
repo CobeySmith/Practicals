@@ -9,8 +9,8 @@ def main():
 
     # Question 2
     with open("name.txt", "r") as infile:
-        name = infile.readline().strip()
-        print(f"Your name is {name}")
+        name = infile.read().strip()
+    print(f"Your name is {name}")
 
     # Question 3
     with open("numbers.txt", "r") as infile:
