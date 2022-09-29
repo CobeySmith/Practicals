@@ -32,7 +32,7 @@ def get_valid_denominator():
 main()
 
 """
-1. If anything other than an integer is entered after numerator and denominator.
-2. If a zero is entered as the denominator
+1. If anything other than an integer is entered after numerator and denominator inputs.
+2. If a zero is entered as the denominator.
 3. You could add an error-checking loop to make sure denominator != 0
 """
