@@ -35,6 +35,7 @@ def main():
 
 
 def get_valid_number(infile):
+    """Gets a valid number."""
     try:
         number = float(infile.readline())
         return number
