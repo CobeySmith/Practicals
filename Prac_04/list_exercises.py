@@ -6,8 +6,16 @@ NUMBER_OF_NUMBERS = 5
 
 
 def main():
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
+                 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer',
+                 'bob']
     numbers = get_numbers()
     print_numbers_information(numbers)
+    username = input("Username: ")
+    if username in usernames:
+        print("Access Granted")
+    else:
+        print("Access Denied")
 
 
 def get_numbers():
