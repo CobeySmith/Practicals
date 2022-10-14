@@ -7,8 +7,8 @@ CODE_TO_NAME = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern T
                 "ACT": "Australian Capital Territory", "VIC": "Victoria", "TAS": "Tasmania"}
 print(CODE_TO_NAME)
 
-max_code_length = max(list(len(pair) for pair in CODE_TO_NAME.keys()))
-max_name_length = max(list(len(pair) for pair in CODE_TO_NAME.values()))
+max_code_length = max(len(pair) for pair in CODE_TO_NAME.keys())
+max_name_length = max(len(pair) for pair in CODE_TO_NAME.values())
 
 state_code = input("Enter short state: ").upper()
 while state_code != "":

@@ -9,8 +9,8 @@ COLOUR_TO_CODE = {"Absolute Zero": "#0048ba", "Amethyst": "#9966cc", "Aqua": "#0
 
 
 def main():
-    max_code_length = max(list(len(pair) for pair in COLOUR_TO_CODE.values()))
-    max_name_length = max(list(len(pair) for pair in COLOUR_TO_CODE.keys()))
+    max_code_length = max(len(pair) for pair in COLOUR_TO_CODE.values())
+    max_name_length = max(len(pair) for pair in COLOUR_TO_CODE.keys())
 
     colour_name = input("Colour Name: ").title()
     while colour_name != "":
