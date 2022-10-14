@@ -6,6 +6,7 @@ Actual:   25 minutes 42 seconds
 
 
 def main():
+    """Counts how many words are in a string."""
     string = input("String input: ")
     word_to_count = covert_string_to_dictionary(string)
     # print(word_to_count)
@@ -13,13 +14,15 @@ def main():
 
 
 def print_formatted_output(word_to_count):
-    max_word_length = max(list(len(word) for word in word_to_count.keys()))
-    max_count_length = max(list(len(str(count)) for count in word_to_count.values()))
+    """Print the keys and values from a dictionary."""
+    max_word_length = max(len(word) for word in word_to_count.keys())
+    max_count_length = max(len(str(count)) for count in word_to_count.values())
     for word, count in word_to_count.items():
         print(f"{word:{max_word_length}}: {count:{max_count_length}}")
 
 
 def covert_string_to_dictionary(string):
+    """Convert a string to a dictionary."""
     collection_of_words = string.split(" ")
     word_to_count = {}
     for word in collection_of_words:
