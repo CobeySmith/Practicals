@@ -1,0 +1,2 @@
+
+dynamic_languages = [programming_language for programming_language in programming_languages if programming_language.is_dynamic()]
