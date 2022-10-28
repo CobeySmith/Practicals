@@ -1,5 +1,5 @@
 """
-Prac_06 languages exercise
+prac_06 languages exercise
 Estimate: 15 mins
 Actual: 20 mins
 """
