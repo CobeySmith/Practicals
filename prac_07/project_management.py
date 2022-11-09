@@ -12,7 +12,7 @@ FILENAME = "projects.txt"
 
 
 def main():
-    title = load_title(FILENAME)
+    title = load_title_from_file(FILENAME)
     projects = load_data(FILENAME)
     menu_choice = input("- (L)oad projects\n- (S)ave projects\n- (D)isplay projects\n- (F)ilter projects by date\n"
                         "- (A)dd new project\n- (U)pdate project\n- (Q)uit\n>>> ").upper()
@@ -37,7 +37,7 @@ def main():
     print("Thanks for coming")
 
 
-def load_title(filename):
+def load_title_from_file(filename):
     """Load title line from file."""
     with open(filename, "r") as in_file:
         title = in_file.readline().strip().split("\t")
