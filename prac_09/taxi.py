@@ -8,10 +8,10 @@ from car import Car
 class Taxi(Car):
     """Specialised version of a Car that includes fare costs."""
 
-    def __init__(self, name, fuel):
+    def __init__(self, **kwargs):
         """Initialise a Taxi instance, based on parent class Car."""
         price_per_km = 1.23
-        super().__init__(name, fuel)
+        super().__init__(**kwargs)
         self.price_per_km = price_per_km
         self.current_fare_distance = 0
 
@@ -21,7 +21,7 @@ class Taxi(Car):
 
     def get_fare(self):
         """Return the price for the taxi trip."""
-        return self.price_per_km * self.current_fare_distance
+        return round(self.price_per_km * self.current_fare_distance, 1)
 
     def start_fare(self):
         """Begin a new fare."""
