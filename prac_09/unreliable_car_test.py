@@ -7,6 +7,8 @@ def main():
     print(c1)
     c1.drive(40)
     print(c1)
+    c2 = UnreliableCar()
+    print(c2)
 
 
 main()
