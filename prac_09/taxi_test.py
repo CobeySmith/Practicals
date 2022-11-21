@@ -1,4 +1,6 @@
-
+"""
+Tests for taxi class.
+"""
 from taxi import Taxi
 
 

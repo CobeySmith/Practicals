@@ -1,3 +1,8 @@
+"""
+Test code for Silver Service Taxi class.
+"""
+
+
 from silver_service_taxi import SilverServiceTaxi
 
 

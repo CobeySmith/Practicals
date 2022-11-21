@@ -9,6 +9,7 @@ class UnreliableCar(Car):
         self.reliability = reliability
 
     def drive(self, distance):
+        """Overrides drive methods to work randomly."""
         drive_chance = randint(0, 100)
         if drive_chance >= self.reliability:
             distance_driven = super().drive(distance)

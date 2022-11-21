@@ -3,6 +3,7 @@ from taxi import Taxi
 
 class SilverServiceTaxi(Taxi):
     def __init__(self, fanciness: float, **kwargs):
+        """Initialise Silver Service Taxi class from Taxi."""
         price_per_km = 1.23
         super().__init__(**kwargs)
         self.fanciness = fanciness
@@ -14,4 +15,5 @@ class SilverServiceTaxi(Taxi):
         return super(SilverServiceTaxi, self).get_fare() + self.flagfall
 
     def __str__(self):
+        """Returns the str representation of the class."""
         return f"{super().__str__()} plus flagfall of %{self.flagfall}"

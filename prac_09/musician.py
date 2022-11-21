@@ -1,4 +1,4 @@
-"""Musician class for CP1404"""
+"""Musician class for CP1404 Prac 9"""
 
 
 class Musician:
