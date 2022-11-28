@@ -55,7 +55,7 @@ def get_valid_number(prompt):
         try:
             number = int(input(prompt))
             if number < 0:
-                print("Age must be >= 0")
+                print("Number must be >= 0")
             else:
                 is_valid_input = True
         except ValueError:
